@@ -6,6 +6,8 @@
 # authors: Arpit Jalan
 # url: https://github.com/techAPJ/discourse-prioritize-generic-onebox
 
+require "onebox"
+
 class Onebox::Engine::AllowlistedGenericOnebox
   def placeholder_html
     return article_html if is_article?
