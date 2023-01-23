@@ -20,11 +20,11 @@ class Onebox::Engine::AllowlistedGenericOnebox
   private
 
   def generic_html
-    return article_html  if is_article?
-    return video_html    if is_video?
-    return image_html    if is_image?
+    return article_html if is_article?
+    return video_html if is_video?
+    return image_html if is_image?
     return embedded_html if is_embedded?
-    return article_html  if has_text?
-    return card_html     if is_card?
+    return article_html if has_text?
+    return card_html if is_card?
   end
 end
