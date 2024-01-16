@@ -25,6 +25,6 @@ class Onebox::Engine::AllowlistedGenericOnebox
     return image_html if is_image?
     return embedded_html if is_embedded?
     return article_html if has_text?
-    return card_html if is_card?
+    card_html if is_card?
   end
 end
